@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="marketplace-wrapper">
+        <div id="marketplace-logo">
+            <img src="/media/2people-logo.png" alt="">
+        </div>
+        <input id="marketplace-search" type="text" placeholder="Search..">
+        <div id="marketplace-filters-container">
+            <div id="filters">
+                    <span class="headline">Kategori</span>
+                    <br>
+                    <input type="checkbox" name="type" value="konsulenter" id="p1">
+                    <label for="p1">Konsulenter</label>
+                    <br/>
+                    <input type="checkbox" name="type" value="integrationer" id="p2">
+                    <label for="p2">Integrationer</label>
+                    <br/>
+                    <input type="checkbox" name="type" value="rekruttering" id="p3">
+                    <label for="p3">Rekruttering</label>
+                    <br/>
+                    <input type="checkbox" name="type" value="trivsel" id="p4">
+                    <label for="p4">Trivsel</label>
+                    <br/>
+            </div>
+        </div>
+            <ul id="marketplace-partners">
+                <li class="p-class" data-type="konsulenter"><div class="partner-logo"><img src="media/einfach-logo.png" alt=""></div><hr><div class="partner-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo id aut impedit saepe repellat sapiente optio ea voluptatum. Iste eligendi ad odit.</div></li>
+                <li class="p-class" data-type="konsulenter"><div class="partner-logo"><img src="media/persondata-logo.png" alt=""></div><hr><div class="partner-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo id aut impedit saepe repellat sapiente optio ea voluptatum. Iste eligendi ad odit.</div></li>
+                <li class="p-class" data-type="konsulenter"><div class="partner-logo"><img src="media/hrsupporten-logo.jpg" alt=""></div><hr><div class="partner-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo id aut impedit saepe repellat sapiente optio ea voluptatum. Iste eligendi ad odit.</div></li>
+                <li class="p-class" data-type="konsulenter"><div class="partner-logo"><img src="media/comita-logo.png" alt=""></div><hr><div class="partner-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo id aut impedit saepe repellat sapiente optio ea voluptatum. Iste eligendi ad odit.</div></li>
+                <li class="p-class" data-type="rekruttering"><div class="partner-logo"><img src="media/nextt-logo.png" alt=""></div><hr><div class="partner-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo id aut impedit saepe repellat sapiente optio ea voluptatum. Iste eligendi ad odit.</div></li>
+                <li class="p-class" data-type="trivsel"><div class="partner-logo"><img src="media/aagaard-logo.png" alt=""></div><hr><div class="partner-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo id aut impedit saepe repellat sapiente optio ea voluptatum. Iste eligendi ad odit.</div></li>
+                <li class="p-class" data-type="integrationer"><div class="partner-logo"><img src="media/proloen-logo.png" alt=""></div><hr><div class="partner-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo id aut impedit saepe repellat sapiente optio ea voluptatum. Iste eligendi ad odit.</div></li>
+                <li class="p-class" data-type="integrationer"><div class="partner-logo"><img src="media/gratisal-logo.png" alt=""></div><hr><div class="partner-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo id aut impedit saepe repellat sapiente optio ea voluptatum. Iste eligendi ad odit.</div></li>
+            </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
