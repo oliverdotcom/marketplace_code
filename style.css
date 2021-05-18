@@ -112,6 +112,11 @@ border-right: 1px solid white;
 border-left: 1px solid white;
 }
 
+.partner-link {
+  text-decoration: none;
+  display: flex;
+}
+
 /* Mobile media query - makes filters go on top */
 
 @media only screen and (max-width: 829px) {
