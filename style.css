@@ -1,3 +1,5 @@
+/* CSS reset */
+
 * {
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
@@ -5,9 +7,13 @@
     padding: 0;
 }
 
+/* General styling */
+
 body {
   background-color: #f0efff;
 }
+
+/* Entire marketplace section */
 
 #marketplace-wrapper {
   width: 100%;
@@ -24,30 +30,7 @@ body {
   "grid-filters grid-partners";
 }
 
-#marketplace-logo {
-display: flex;
-justify-content: flex-end;
-}
-
-#marketplace-logo img {
-grid-area: grid-logo;
-width: 112px;
-height: auto;
-object-fit: contain;
-}
-
-#marketplace-search {
-grid-area: grid-search;
-display: flex;
-width: 632px;
-height: 80px;
-margin: auto 0 auto 16px;
-border-style: none;
-border-radius: 8px;
-padding-left: 16px;
-font-family: Arial, Helvetica, sans-serif;
-font-size: 16px;
-}
+/* Marketplace filters */
 
 #marketplace-filters-container { 
   grid-area: grid-filters;
@@ -58,6 +41,16 @@ font-size: 16px;
   background-color: #f0efff;
 }
 
+#filters label {
+margin-left: 4px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 16px;
+line-height: 40px;
+padding: 0px;
+}
+
+/* Marketplace partners */
+
 #marketplace-partners { 
   display: grid;
   grid-area: grid-partners;
@@ -65,15 +58,6 @@ font-size: 16px;
   grid-template-columns: repeat(auto-fit, minmax(332px, 332px));
   height: 100%;
   background-color: #f0efff;
-}
-
-
-#filters label {
-margin-left: 4px;
-font-family: Arial, Helvetica, sans-serif;
-font-size: 16px;
-line-height: 40px;
-padding: 0px;
 }
 
 #marketplace-partners li {
