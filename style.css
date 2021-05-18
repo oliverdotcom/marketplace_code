@@ -24,7 +24,7 @@ body {
   grid-template-columns: 20% 80%;
   grid-template-rows: 1fr;
   grid-template-areas:
-  "grid-logo grid-search"
+  "grid-filters-mobile grid-filters-mobile"
   "grid-filters grid-partners"
   "grid-filters grid-partners"
   "grid-filters grid-partners";
@@ -39,6 +39,12 @@ body {
   display: flex;
   justify-content: flex-end;
   background-color: #f0efff;
+}
+
+.headline {
+font-size: 24px;
+font-weight: 600;
+line-height: 48px;
 }
 
 #filters label {
@@ -97,12 +103,6 @@ width: 200px;
 margin: auto;
 }
 
-.headline {
-font-size: 24px;
-font-weight: 600;
-line-height: 48px;
-}
-
 hr {
 margin: 0 auto 10px auto;
 width: 85%;
@@ -110,4 +110,45 @@ border-top: 1px solid #dadada;
 border-bottom: 1px solid white;
 border-right: 1px solid white;
 border-left: 1px solid white;
+}
+
+/* Mobile media query - makes filters go on top */
+
+@media only screen and (max-width: 829px) {
+
+  /* Entire marketplace section - mobile */
+
+  #marketplace-wrapper {
+    width: 360px;
+    height: 100%;
+    background-color: #f0efff;
+    margin: 10vh auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "grid-filters-mobile"
+    "grid-partners";
+  } 
+
+  /* Marketplace filters - mobile */
+
+  #marketplace-filters-container { 
+    grid-area: grid-filters-mobile;
+    width: 100%;
+    height: 100%;
+    background-color: #f0efff;
+    justify-content: center;
+  }
+
+  #filters {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Marketplace partners - mobile */
+
+  #marketplace-partners { 
+   justify-content: center;
+  }
 }
